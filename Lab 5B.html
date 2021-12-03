@@ -8,75 +8,122 @@
 	
 </head>
 	<style>
-		/*Write your CSS code here*/
-		div {
-			width: 100px;
-			height: 100px;
-			border: 3px solid blue;
-			background-color: black;
-			
-      font-size:100px;
-		}
+.button1 {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
-    .Eclass{
-      transition: height 1s, background-color 4s;
-      color:red;
-    }
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
-    .Eclass:hover{
-      background-color:orange;
-      height: 100px;
-      width:700px;
-    }
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
-    .Rclass{
-      transition: width 2s, background-color 5s;
-      color:blue;
-    }
-    .Rclass:hover{
-      background-color:purple;
-      width:400px;
-    }
-    .Iclass{
-      transition: width 3s, background-color 2s;
-      color:orange;
-    }
-    .Iclass:hover{
-      background-color:blue;
-      width:200px;
-      
-    }
-    .Cclass{
-      transition: width 6s, background-color 4s;
-      color:green;
-    }
-    .Cclass:hover{
-      background-color:grey;
-      width:500px;
-    }
-    .Kclass{
-      transition: width 10s, background-color 6s;
-      color:Pink;
-    }
-    .Kclass:hover{
-      background-color:white;
-      width:800px;
-    }
+.button1:hover span {
+  padding-right: 25px;
+}
 
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+		
+		.button2 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
-	</style>
+.button2:hover {background-color: #3e8e41}
 
+.button2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+		.button3 {
+  position: relative;
+  background-color: blue;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button3:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button3:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+		
+</style>
+    
 <body>
 	 <nav>
 <a href = "DigitalDesign.html">Go back</a><br>
 	</nav>
 		<p>Hover over each letter to see the transition effect:</p>
 
-<div class = "Eclass">E</div>
-  <div class = "Rclass">R</div>
-  <div class = "Iclass">I</div>
-  <div class = "Cclass">C</div>
-  <div class = "Kclass">K</div>
-  
+	<h2>Pressed Effect</h2>
+
+<button class="button1"><span>Hover </span></button>
+	
+<h2> Pressed Effect </h2>
+
+<button class="button2">Click Me</button>
+
+	
+<h2>Ripple Effect</h2>
+
+<button class="button3">Click Me</button>
+
+	
 </body>
 </html>

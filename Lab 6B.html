@@ -5,11 +5,78 @@
 
 <meta charset="UTF-8">
 <title>Untitled Document</title>
+	
 </head>
+	<style>
+		/*Write your CSS code here*/
+		div {
+			width: 100px;
+			height: 100px;
+			border: 3px solid blue;
+			background-color: black;
+			
+      font-size:100px;
+		}
+
+    .Eclass{
+      transition: height 1s, background-color 4s;
+      color:red;
+    }
+
+    .Eclass:hover{
+      background-color:orange;
+      height: 100px;
+      width:700px;
+    }
+
+    .Rclass{
+      transition: width 2s, background-color 5s;
+      color:blue;
+    }
+    .Rclass:hover{
+      background-color:purple;
+      width:400px;
+    }
+    .Iclass{
+      transition: width 3s, background-color 2s;
+      color:orange;
+    }
+    .Iclass:hover{
+      background-color:blue;
+      width:200px;
+      
+    }
+    .Cclass{
+      transition: width 6s, background-color 4s;
+      color:green;
+    }
+    .Cclass:hover{
+      background-color:grey;
+      width:500px;
+    }
+    .Kclass{
+      transition: width 10s, background-color 6s;
+      color:Pink;
+    }
+    .Kclass:hover{
+      background-color:white;
+      width:800px;
+    }
+
+
+	</style>
 
 <body>
 	 <nav>
 <a href = "DigitalDesign.html">Go back</a><br>
 	</nav>
+		<p>Hover over each letter to see the transition effect:</p>
+
+<div class = "Eclass">E</div>
+  <div class = "Rclass">R</div>
+  <div class = "Iclass">I</div>
+  <div class = "Cclass">C</div>
+  <div class = "Kclass">K</div>
+  
 </body>
 </html>
